@@ -7,19 +7,19 @@ import com.sun.jersey.api.client.WebResource;
 
 import br.com.qwerty.entidade.Usuario;
 
-public class JerseyClientPost {
+public class JerseyClientPut {
 
 	public static void main(String[] args) {
-
 		try {
 
 			Client client = Client.create();
 
-			WebResource webResource = client.resource("http://localhost:8080/barpp/hello/salvar");
-			
+			WebResource webResource = client.resource("http://localhost:8080/barpp/hello/atualizar");
+
 			Gson gson = new Gson();
-			
+
 			Usuario u = new Usuario();
+			u.setId(3);
 			u.setApelido("Fulano");
 			u.setEmail("aaa@a.com");
 			u.setNome("Ciclano");
@@ -29,7 +29,7 @@ public class JerseyClientPost {
 
 			String input = gson.toJson(u);
 
-			ClientResponse response = webResource.type("application/json").post(ClientResponse.class, input);
+			ClientResponse response = webResource.type("application/json").put(ClientResponse.class, input);
 
 			System.out.println("Resposta do serviço .... \n");
 			String output = response.getEntity(String.class);
