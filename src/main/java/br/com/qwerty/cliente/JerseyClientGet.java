@@ -13,7 +13,7 @@ public class JerseyClientGet {
 
 			Client client = Client.create();
 
-			WebResource webResource = client.resource("http://localhost:8080/barpp/hello/buscar/10");
+			WebResource webResource = client.resource("http://localhost:8080/barpp/hello/buscar/11");
 
 			ClientResponse response = webResource.accept("application/json").get(ClientResponse.class);
 

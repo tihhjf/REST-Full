@@ -11,7 +11,7 @@ public class JerseyClientDelete {
 
 			Client client = Client.create();
 
-			WebResource webResource = client.resource("http://localhost:8080/barpp/hello/remover/3");
+			WebResource webResource = client.resource("http://localhost:8080/barpp/hello/remover/21");
 
 			ClientResponse response = webResource.accept("application/json").delete(ClientResponse.class);
 

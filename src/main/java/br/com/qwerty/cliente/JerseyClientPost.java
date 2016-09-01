@@ -20,7 +20,7 @@ public class JerseyClientPost {
 			Gson gson = new Gson();
 			
 			Usuario u = new Usuario();
-			u.setApelido("Fulano");
+			u.setApelido("ALoooooooo");
 			u.setEmail("aaa@a.com");
 			u.setNome("Ciclano");
 			u.setSenha("123456");

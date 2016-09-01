@@ -19,7 +19,7 @@ public class JerseyClientPut {
 			Gson gson = new Gson();
 
 			Usuario u = new Usuario();
-			u.setId(3);
+			u.setId(17);
 			u.setApelido("Fulano");
 			u.setEmail("aaa@a.com");
 			u.setNome("Ciclano");
